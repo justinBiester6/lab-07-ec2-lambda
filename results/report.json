@@ -1,0 +1,67 @@
+{
+  "documents": 101,
+  "runs_by_machine": [
+    {
+      "host": "169.254.73.155",
+      "books": 1
+    },
+    {
+      "host": "JBsLaptop",
+      "books": 3
+    },
+    {
+      "host": "ip-172-31-19-107",
+      "books": 100
+    }
+  ],
+  "last_processed": [
+    {
+      "_id": "pg3296.txt",
+      "author": "Saint of Hippo Augustine",
+      "bucket": "public-rqw2ck",
+      "language": "English",
+      "runs": [
+        {
+          "host": "169.254.73.155",
+          "at": "2026-11-03 17:44:22.570000"
+        }
+      ],
+      "title": "The Confessions of St. Augustine",
+      "unique_words": 7342,
+      "vocabulary_ratio": 0.0655,
+      "word_count": 112123
+    },
+    {
+      "_id": "pg996.txt",
+      "author": "Miguel de Cervantes Saavedra",
+      "bucket": "public-rqw2ck",
+      "language": "English",
+      "runs": [
+        {
+          "host": "ip-172-31-19-107",
+          "at": "2026-10-29 19:07:56.427000"
+        }
+      ],
+      "title": "Don Quixote",
+      "unique_words": 15574,
+      "vocabulary_ratio": 0.0359,
+      "word_count": 433304
+    },
+    {
+      "_id": "pg98.txt",
+      "author": "Charles Dickens",
+      "bucket": "public-rqw2ck",
+      "language": "English",
+      "runs": [
+        {
+          "host": "ip-172-31-19-107",
+          "at": "2026-10-29 19:07:55.954000"
+        }
+      ],
+      "title": "A Tale of Two Cities",
+      "unique_words": 9698,
+      "vocabulary_ratio": 0.07,
+      "word_count": 138490
+    }
+  ]
+}

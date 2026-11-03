@@ -14,7 +14,8 @@ Suppose your instance is running and has a public IP address, but `ssh` cannot c
 
 **Your answer:** Which path did you take in the console (service → page → tab)?
 
-...
+I first searched for and clicked on EC2. Then on the side dash I went to the Network & Security tab then clicked on Security Groups.
+I then clicked on the one called launch-wizard-1 which showed me the one with port range of 22 that allowed ssh.
 
 ## 2. Lambda: why didn't my function run?
 
@@ -26,7 +27,8 @@ Suppose you uploaded a new book to your bucket, but several minutes later MongoD
 
 **Your answer:** Which path did you take in the console (service → page → tab)?
 
-...
+I searched for and clicked on Lambda which brought me to event functions and book-analyzer-dev-analyze_new_book. 
+I clicked on Configuration then clicked on Triggers. This showed me the S3 bucket.
 
 ## 3. Lambda: where do I find the error?
 
@@ -38,7 +40,9 @@ Suppose the function did start, but MongoDB still has no document for the book. 
 
 **Your answer:** Which path did you take in the console (service → page → tab)?
 
-...
+I searched for and clicked on Lambda which brought me to event functions and book-analyzer-dev-analyze_new_book. It landed on Monitor
+page where I then click on View CloudWatch logs, where I look for Log Streams and click on the most recent one. I found the line that
+stated how many words the book has.
 
 ## 4. EC2 or Lambda: a backlog or new uploads?
 
@@ -54,4 +58,8 @@ For comparison, typical times in this lab:
 
 **Your answer:**
 
-...
+For Case A, I would pick EC2 because it would take a little over 1000 seconds compared to a little over 10000 seconds comparatively. 
+It would probably cost less too because it is charged by the minute rather than the book, and you know it be done only once.
+
+For Case B, I would pick Lambda because it is quicker for this scenario and it needed to have a quick start to be analyzed in a minute.
+This time you also don't know when the book will come so this would be more flexible cost and time wise.
